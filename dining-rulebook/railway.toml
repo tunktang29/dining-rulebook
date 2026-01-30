@@ -1,0 +1,10 @@
+[build]
+builder = "nixpacks"
+
+[build.env]
+PYTHON_VERSION = "3.9"
+
+[deploy]
+healthcheckPath = "/health"
+healthcheckTimeout = 300
+restartPolicyType = "on-failure"
